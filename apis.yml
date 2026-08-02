@@ -1,8 +1,26 @@
 aid: the-players-tribune
-name: The Players' Tribune *
-description: 'The Players'' Tribune * is a company surfaced as a portfolio company of gv, ivp and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/the-players-tribune.png
+name: The Players' Tribune
+description: 'The Players'' Tribune is a sports-media company that gives athletes a
+  platform to connect directly with fans in their own words, publishing first-person
+  stories, essays, letters, and video from professional players across football, basketball,
+  soccer, baseball, and other sports. Founded in 2014 and backed by GV and IVP, it
+  operates as a digital publisher rather than an API provider: an enrichment probe
+  of theplayerstribune.com found a public sports-content website with no developer
+  portal, documentation, or public API surface (no docs/api/developer subdomains,
+  no /.well-known/ metadata, no llms.txt). This profile captures the company identity
+  and the results of a live domain-security probe.'
 url: https://raw.githubusercontent.com/api-evangelist/the-players-tribune/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Media
+- Sports
+- Publishing
+- Content
+- Athletes
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/the-players-tribune-domain-security.yml
 - type: Website
-  url: http://theplayerstribune.com
+  url: https://www.theplayerstribune.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
